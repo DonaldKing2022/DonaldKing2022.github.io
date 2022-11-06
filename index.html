@@ -53,56 +53,6 @@ margin-bottom: 125px;
 <a href="ucbrowser://'.%20$siteurl%20.'"><img src="http://wx4.sinaimg.cn/mw690/0060lm7Tly1g019l1snd3j3074074gnv.jpg"></img></a>
 <a href="bdbrowser://'.%20$siteurl%20.'"><img src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1g019v4k8vkj307407440t.jpg"></img></a>
 </div>
-<div class="app-download-tip">
-<span class="guidance-desc">点击上方图标or复制本站网址自行打开</span>
-</div>
-<script type="text/javascript">$.getScript("http://cn.battleofballs.com/share?type=1&id=45302205",function(data){});</script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-<script src="//www.7nys.com/static/js/layer.js"></script>
-<a data-clipboard-text="'.$siteurl.'" class="app-download-btn">点此复制本站网址</a>
-<script type="text/javascript">
-new ClipboardJS(".app-download-btn");
-$(".app-download-btn").click(function() {
-layer.tips("复制成功，么么哒", ".app-download-btn", {
-tips: [3, "rgb(38,111,250)"],
-time:500
-});})
-</script>
-<script type="text/javascript">$.getScript("http://cn.battleofballs.com/share?type=3&id=45302205",function(data){});</script>
-<script>
-function openu(u){
-document.getElementById("vurl").href= u;
-document.getElementById("vurl").click();
-}
-var url = window.location.href;
-if(navigator.userAgent.indexOf("QQ/")> -1){
-openu("ucbrowser://"+url);
-openu("mttbrowser://url="+url);
-openu("baiduboxapp://browse?url="+url);
-openu("googlechrome://browse?url="+url);
-openu("mibrowser:"+url);
-openu("taobao://"+url.split("://")[1]);
-openu("alipays://platformapi/startapp?appId=20000067&url="+url);
-$("html").on("click",function(){
-openu("ucbrowser://"+url);
-openu("mttbrowser://url="+url);
-openu("baiduboxapp://browse?url="+url);
-openu("googlechrome://browse?url="+url);
-openu("mibrowser:"+url);
-openu("taobao://"+url.split("://")[1]);
-openu("alipays://platformapi/startapp?appId=20000067&url="+url);
-});
-}else if(navigator.userAgent.indexOf("MicroMessenger") > -1){
-if(navigator.userAgent.indexOf("Android") > -1){
-var iframe = document.createElement("iframe");
-iframe.style.display = "none";
-document.body.appendChild(iframe);
-}else{
-
-
-}
-}
 </script>
 </html>';exit; } ?>
 <html>
